@@ -1,0 +1,219 @@
+:root {
+    --blue: #49bfff;
+    --white: #fff;
+    --gray: #333;
+    --fontSize: 16px;
+    --transition: .3s ease;
+    --lightBlue: rgb(92,204,253);
+}
+
+/**********
+BASIC STYLES
+**********/
+img {
+    display: block;
+    width: 100%;
+}
+.nav-link:hover {
+    color: var(--gray);
+    transition: var(--transition);
+}
+.btn-danger:hover {
+    background-color: var(--white);
+    color: var(--gray);
+}
+
+/*********
+NAV
+**********/
+.navbar-blue {
+    background: var(--blue)!important;
+}
+.logo {
+    color: var(--white)!important;
+    font-size: 2rem;  
+}
+nav li a {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+nav li:first-child a {
+    color: var(--gray);
+}
+nav li:nth-child(2) a,
+nav li:nth-child(3) a,
+nav li:nth-child(4) a,
+nav li:nth-child(5) a {
+    color: var(--white);
+}
+
+/*********
+SLIDER
+**********/
+.slider {
+    position: relative;
+}
+.slider .text {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+    transform: translate(-50%,-37%);
+}
+
+/*********
+EXPLORE
+**********/
+.explore span {
+    background: var(--blue);
+}
+.explore i {
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+.explore article:last-child p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*********
+TRIPS
+**********/
+.trips {
+    background: var(--lightBlue);
+    color: var(--white);
+}
+.trips h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+.trips i {
+    background: var(--white);
+    color: var(--blue);
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/**********
+DESTINATIONS
+***********/
+.destinations .card {
+    margin: 30px;
+}
+.destinations  img.card-img-top {
+    position: relative;
+}
+.destinations span {
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    color: var(--white);
+    background-color: var(--blue);
+    font-weight: 500;
+    padding: 5px;
+}
+.card-body i {
+    color: var(--blue);
+}
+.card-body h5 {
+    font-weight: 400;
+}
+.card-body p :first-child {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/********
+ENJOY
+********/
+.enjoy {
+    background-image:linear-gradient(rgba(31, 28, 28, 0.5),rgba(65, 62, 62, 0.5)), url(img/slide-palms.jpg);
+    background-position: bottom;
+    background-size: cover;
+    height: 40vh;
+}
+.enjoy article {
+    color: var(--white);
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.enjoy article h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+/*******
+POPULAR
+*********/
+.popular h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+.popular div img  {
+    position: relative;
+}
+.popular .icons {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    background: var(--blue);
+    padding: 5px;
+}
+.popular .icons i {
+    color: var(--white);
+}
+
+/**********
+FOOTER
+**********/
+.top {
+    background: rgb(68,75,81);
+    color: lightgray;
+}
+.top div:last-child i {
+    margin-left: -30px;
+    color: var(--white);
+}
+.top div:last-child i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+footer .imgs img {
+    display: inline;
+    width: 30px;
+    height: auto;
+}
+footer .imgs img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.top input {
+    border: none;
+    background-color: black;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+section.btm {
+    background-color: var(--lightBlue);
+}
+section.btm p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/********
+RESPONSIVE
+*********/
+@media(max-width:767px) {
+    h1.display-4 {
+        font-size: 2rem;
+    }
+    .slider .text {
+        top: 25%;
+    }
+    .slider img {
+        height: 30vh;
+    }
+}
